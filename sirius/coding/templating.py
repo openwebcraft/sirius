@@ -2,7 +2,7 @@ import jinja2
 
 DEFAULT_TEMPLATE = '''\
 <html>
-  <body>
+  <body style="background-color: #ffffff">
     {{ raw_html|safe }}
   </body>
 </html>
