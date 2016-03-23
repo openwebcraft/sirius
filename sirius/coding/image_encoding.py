@@ -62,6 +62,7 @@ def crop_384(im):
 
 
 def threshold(im):
+    im = im.convert('1')
     thresholded = ''.join(pixel_to_bw(x) for x in im.convert('RGBA').getdata())
     return Image.fromstring('L', im.size, thresholded)
 
