@@ -18,4 +18,4 @@ ENV = jinja2.Environment()
 
 def default_template(raw_html):
     t = ENV.from_string(DEFAULT_TEMPLATE)
-    return t.render(raw_html=raw_html)
+    return t.render(raw_html=raw_html).encode('utf-8')
